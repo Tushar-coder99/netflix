@@ -1,0 +1,150 @@
+/* Existing CSS remains, add or modify these rules */
+
+* {
+    margin: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.navlogo {
+    height: 50px;
+    width: 113px;
+    min-width: 113px;
+}
+
+.address {
+    width: auto;
+    min-width: 100px;
+}
+
+.nav_search {
+    flex-grow: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.search_select {
+    width: 15%;
+    min-width: 70px;
+}
+
+.search_input {
+    width: 70%;
+    min-width: 100px;
+}
+
+.search_icon {
+    width: 15%;
+    min-width: 50px;
+}
+
+.game, .cart {
+    padding: 5px 10px;
+}
+
+.panel {
+    height: auto;
+    min-height: 40px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.panel_opt {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.panel_opt p {
+    margin: 5px 20px 5px 0;
+}
+
+.hero_section {
+    height: 200px;
+    background-position: center;
+}
+
+.shop_section {
+    padding: 25px 10px;
+}
+
+.box {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.foot-panel2 {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+}
+
+.foot-panel2 > div {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.foot-panel4 {
+    height: auto;
+    padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav_search {
+        order: 3;
+        width: 100%;
+    }
+
+    .panel_opt {
+        display: none;
+    }
+
+    .hero_section {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+
+    .foot-panel2 > div {
+        width: 100%;
+    }
+
+    .panel4-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar > div {
+        margin-bottom: 10px;
+    }
+
+    .address, .game, .cart {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_section {
+        height: 100px;
+    }
+}
